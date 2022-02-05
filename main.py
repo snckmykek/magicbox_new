@@ -3,6 +3,10 @@ Config.set('graphics', 'resizable', '1')
 Config.set('graphics', 'width', '360')
 Config.set('graphics', 'height', '640')
 
+#: import ListMainForm content.list.list_main_form
+#: import ContentNavigationDrawer content_navigation_drawer
+#: import db db_requests.db
+
 from kivy.properties import StringProperty
 from kivymd.app import MDApp
 from kivymd.uix.boxlayout import MDBoxLayout
