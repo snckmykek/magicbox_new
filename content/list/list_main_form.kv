@@ -1,0 +1,10 @@
+<ListMainForm>:
+    md_bg_color: app.theme_cls.bg_normal
+
+    MDRelativeLayout:
+
+        MDFloatingActionButton:
+            icon: 'plus'
+            pos_hint: {'x': .7, 'y': .2}
+            on_release: root.create_new_list()
+            elevation: 5
