@@ -4,7 +4,7 @@ from kivymd.uix.boxlayout import MDBoxLayout
 from content.list.list_ef import ListElementForm
 
 
-Builder.load_file(r"content\list\list_main_form.kv")
+Builder.load_file(r"content/list/list_main_form.kv")
 
 
 class ListMainForm(MDBoxLayout):

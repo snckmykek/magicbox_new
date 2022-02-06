@@ -4,7 +4,7 @@ from kivy.properties import ObjectProperty, DictProperty
 from kivymd.uix.behaviors import RoundedRectangularElevationBehavior
 from kivymd.uix.card import MDCard
 
-Builder.load_file(r"content\common\form_pattern.kv")
+Builder.load_file(r"content/common/form_pattern.kv")
 
 
 class FormPattern(ModalView, MDCard, RoundedRectangularElevationBehavior):

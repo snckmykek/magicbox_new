@@ -1,7 +1,7 @@
 from kivy.lang.builder import Builder
 from content.common.form_pattern import FormPattern
 
-Builder.load_file(r"settings\common_settings.kv")
+Builder.load_file(r"settings/common_settings.kv")
 
 
 class CommonSettingsForm(FormPattern):
