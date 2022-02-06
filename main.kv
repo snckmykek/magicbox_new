@@ -1,83 +1,84 @@
+#: import ContentNavigationDrawer content_navigation_drawer
+#: import db db_requests.db
 
 <MainScreen>:
 
-#    MDNavigationLayout:
-#
-#        ScreenManager:
-#            id: screen_manager
-#            Screen:
-#                name: 'main screen'
-#
-#                MDBoxLayout:
-#                    orientation: 'vertical'
-#
-#                    MDToolbar:
-#                        title: app.current_title
-#                        elevation: 10
-#                        left_action_items: [['menu', lambda x: nav_drawer.set_state("open")]]
-#            #            right_action_items: [['dots-vertical', lambda x: root.open_dropdown(x)]]
-#
-#                    MDBottomNavigation:
-#                        id: main_navigator
-#
-#                        MDBottomNavigationItem:
-#                            name: 'budget'
-#                            text: 'Budget'
-#                            icon: 'view-list'
-#                            on_tab_press: app.change_current_title(db.interface_lang("Бюджет"))
-#
-#                            MDBoxLayout:
-#                                MDLabel:
-#                                    text: 'budget'
-#                                    pos: .5,  .5
-#                                    halign: 'center'
-#
-#                        MDBottomNavigationItem:
-#                            name: 'glider'
-#                            text: 'Glider'
-#                            icon: 'view-list'
-#                            on_tab_press: app.change_current_title(db.interface_lang("Планировщик"))
-#
-#                            MDBoxLayout:
-#                                MDLabel:
-#                                    text: 'glider'
-#                                    pos: .5,  .5
-#                                    halign: 'center'
-#
-#                        MDBottomNavigationItem:
-#                            name: 'list'
-#                            text: 'List'
-#                            icon: 'view-list'
-#                            on_tab_press: app.change_current_title(db.interface_lang("Списки продуктов"))
-#
+    MDNavigationLayout:
+
+        ScreenManager:
+            id: screen_manager
+            Screen:
+                name: 'main screen'
+
+                MDBoxLayout:
+                    orientation: 'vertical'
+
+                    MDToolbar:
+                        title: app.current_title
+                        elevation: 10
+                        left_action_items: [['menu', lambda x: nav_drawer.set_state("open")]]
+
+                    MDBottomNavigation:
+                        id: main_navigator
+
+                        MDBottomNavigationItem:
+                            name: 'budget'
+                            text: 'Budget'
+                            icon: 'view-list'
+                            on_tab_press: app.change_current_title(db.interface_lang("Бюджет"))
+
+                            MDBoxLayout:
+                                MDLabel:
+                                    text: 'budget'
+                                    pos: .5,  .5
+                                    halign: 'center'
+
+                        MDBottomNavigationItem:
+                            name: 'glider'
+                            text: 'Glider'
+                            icon: 'view-list'
+                            on_tab_press: app.change_current_title(db.interface_lang("Планировщик"))
+
+                            MDBoxLayout:
+                                MDLabel:
+                                    text: 'glider'
+                                    pos: .5,  .5
+                                    halign: 'center'
+
+                        MDBottomNavigationItem:
+                            name: 'list'
+                            text: 'List'
+                            icon: 'view-list'
+                            on_tab_press: app.change_current_title(db.interface_lang("Списки продуктов"))
+
 #                            ListMainForm:
-#
-#                        MDBottomNavigationItem:
-#                            name: 'progress'
-#                            text: 'Progress'
-#                            icon: 'view-list'
-#                            on_tab_press: app.change_current_title(db.interface_lang("Прогресс"))
-#
-#                            MDBoxLayout:
-#                                MDLabel:
-#                                    text: 'progress'
-#                                    pos: .5,  .5
-#                                    halign: 'center'
-#
-#                        MDBottomNavigationItem:
-#                            name: 'recipe'
-#                            text: 'Recipe'
-#                            icon: 'view-list'
-#                            on_tab_press: app.change_current_title(db.interface_lang("Рецепты"))
-#
-#                            MDBoxLayout:
-#                                MDLabel:
-#                                    text: 'recipe'
-#                                    pos: .5,  .5
-#                                    halign: 'center'
-#
-#        MDNavigationDrawer:
-#            id: nav_drawer
-#            title: 'magicbox'
-#
-#            ContentNavigationDrawer:
+
+                        MDBottomNavigationItem:
+                            name: 'progress'
+                            text: 'Progress'
+                            icon: 'view-list'
+                            on_tab_press: app.change_current_title(db.interface_lang("Прогресс"))
+
+                            MDBoxLayout:
+                                MDLabel:
+                                    text: 'progress'
+                                    pos: .5,  .5
+                                    halign: 'center'
+
+                        MDBottomNavigationItem:
+                            name: 'recipe'
+                            text: 'Recipe'
+                            icon: 'view-list'
+                            on_tab_press: app.change_current_title(db.interface_lang("Рецепты"))
+
+                            MDBoxLayout:
+                                MDLabel:
+                                    text: 'recipe'
+                                    pos: .5,  .5
+                                    halign: 'center'
+
+        MDNavigationDrawer:
+            id: nav_drawer
+            title: 'magicbox'
+
+            ContentNavigationDrawer:
